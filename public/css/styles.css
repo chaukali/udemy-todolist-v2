@@ -1,0 +1,71 @@
+body {
+  text-align: center;
+  background: linear-gradient(45deg, white 0%, orange 35%, white 100%);
+}
+
+.todo-app {
+  width: 50%;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+ul {
+  width: 50%;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  text-align: left;
+}
+
+ul li {
+  padding: 10px;
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
+  border: 1px solid orange;
+}
+
+form {
+  width: 50%;
+  margin: 5px auto;
+}
+
+input[type="text"] {
+  width: 74%;
+  height: 20px;
+  padding: 8px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid orange;
+}
+
+input[type="checkbox"] {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 2rem;
+}
+
+input[type="checkbox"]:checked+span{
+  text-decoration: line-through;
+  text-decoration-color: orange;
+}
+
+button {
+  width: 20%;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: orange;
+}
+
+button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}

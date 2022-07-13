@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="todo-app">
+      <h1><%=kindOfDate%></h1>
+      <ul>
+        <%for(let i = 0; i < listItem.length; i++) {%>
+          <li><input type="checkbox"><span><%=listItem[i]%></span></li>
+        <%}%>
+      </ul>
+      <form action="/" method="post" autocomplete="off">
+        <input type="text" name="newItem" placeholder="Add new task" autofocus autocomplete="off">
+        <button type="submit" name="button">Add</button>
+      </form>
+    </div>
+  </body>
+</html>
